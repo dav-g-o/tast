@@ -1,0 +1,14 @@
+type Player @model @auth(rules: [{ allow: public }]) {
+  id: ID!
+  mail: String
+  premium: Boolean
+  has: Character @hasOne
+}
+
+type Character @model @auth(rules: [{ allow: public }]) {
+  id: ID!
+  name: String
+  body: Int
+  heart: Int
+  mind: Int
+}
