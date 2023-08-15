@@ -3,9 +3,7 @@ frontend:
   phases:
     preBuild:
       commands:
-        - npm install
         - npm ci
-        - yarn add antd @aws-amplify/core @aws-amplify/datastore
     build:
       commands:
         - npm run build
